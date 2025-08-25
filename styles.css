@@ -1,0 +1,205 @@
+/* General Styling */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F8EEDF;
+}
+
+/* Navigation */
+
+nav {
+    position: sticky;
+    top: 0;
+    background-color: #8E1616;
+    padding: 20px;
+    z-index: 100;
+}
+
+.nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+}
+
+/* Links */
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Headings */
+
+h1 {
+    font-weight: 800;
+    margin-top: 50px;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+h2 {
+    color: #8E1616;
+    font-family: 'Arial Black', Arial, sans-serif;
+    text-decoration: double underline;
+    padding-bottom: 10px;
+    padding-top: 10px;
+
+}
+
+/* Featured Devotional Section */
+
+.section-featured .card {
+    width: 50%;
+    padding: 50px;
+    margin: auto;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow:#b0abab 2px 2px 5px;
+
+} 
+
+.featured-devotional {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.featured-devotional img {
+    width: 300px;
+    border-radius: 5px;
+}
+
+.featured-devotional .prayer {
+    width: 250px;
+    padding: 25px;
+    background-color: white;
+    text-align: center;
+}
+
+/* Grid Articles */
+
+.devotion-grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    width: 90%;
+    margin: auto;
+    padding-bottom: 50px;
+}
+
+article {
+    padding: 10px 25px 25px 25px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow:#b0abab 2px 2px 5px;
+}
+
+.title {
+    text-decoration: underline;
+}
+
+/* Read More Button */
+
+.read-more {
+    font-size: 14px;
+    padding: 5px 10px;
+    color: white;
+    background-color: #8E1616;
+    border-radius: 2px;
+}
+
+/* Media Queries */
+/* Large Devices (Desktops) */
+@media screen and (max-width: 1200px) {
+    .devotion-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .section-featured .card {
+        width: 80%;
+        padding: 20px;
+    }
+
+    .featured-devotional img {
+        width: 275px;
+    }
+
+    .featured-devotional .prayer {
+        width: 250px;
+        padding: 20px;
+    }
+}
+
+/* Medium Devices (Tablets) */
+@media screen and (max-width: 768px) {
+    .devotion-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .section-featured .card {
+        width: 70%;
+        padding: 10px;
+    }
+
+    .featured-devotional {
+        gap: 10px;
+    }
+
+    .featured-devotional img {
+        width: 200px;
+    }
+
+    .featured-devotional .prayer {
+        width: 200px;
+        padding: 5px;
+        font-size: 14px;
+    }
+
+    .read-more {
+        font-size: 12px;
+        padding: 3px 6px;
+    }
+
+}
+
+/* Smalll Devices - mobile phones */
+
+@media screen and (max-width: 480px) {
+    .devotion-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section-featured .card {
+        width: 80%;
+        padding: 20px;
+    }
+
+    .featured-devotional img {
+        width: 250px;
+    }
+
+    .featured-devotional .prayer {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .read-more {
+        font-size: 12px;
+        padding: 3px 6px;
+    }
+}
